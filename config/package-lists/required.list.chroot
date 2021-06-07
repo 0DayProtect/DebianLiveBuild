@@ -37,8 +37,10 @@ broadcom-sta-common
 #SELinux
 selinux-basics
 selinux-policy-default
-selinux-policy-devnewrole
-selinux-utilssetools-gui
+selinux-policy-dev
+newrole
+selinux-utils
+setools-gui
 semanage-utils
 semodule-utils
 newrole
