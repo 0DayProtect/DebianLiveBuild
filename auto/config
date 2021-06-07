@@ -1,0 +1,30 @@
+#!/bin/sh
+
+set -e
+
+case "$(dpkg --print-architecture)" in
+	amd64)
+		_SOURCE="false"
+		;;
+
+	i386)
+		_SOURCE="false"
+		;;
+esac
+
+lb config noauto \
+        --clean \
+        --ignore-system-defaults \
+        --mode debian \
+	--debootstrap-options "--include=apt-transport-https,ca-certificates,openssl" \
+        --mirror-bootstrap "https://deb.debian.org/debian/" \
+        --mirror-chroot "https://deb.debian.org/debian/" \
+        --mirror-binary "https://deb.debian.org/debian/" \
+        --mirror-chroot-security "https://security.debian.org" \
+        --bootappend-live "boot=live toram mds=full,nosmt iommu=off selinux=1 security=selinux" noacpi noefi \
+        --debian-installer live \
+        --linux-packages "linux-image linux-headers" \
+        --archive-areas "main contrib non-free" \
+        --uefi-secure-boot enable \
+        --source "${_SOURCE}" \
+"${@}"
