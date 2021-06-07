@@ -73,6 +73,8 @@ tpm2_tools
 nvidia-detect
 
 
-pxelinux
-syslinux
-isolinux
+#Bootloaders
+#extlinux
+#pxelinux
+#syslinux
+#isolinux
