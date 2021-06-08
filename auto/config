@@ -15,17 +15,38 @@ esac
 lb config noauto \
         --clean \
         --ignore-system-defaults \
-	--bootloader grub-efi \
+	--architectures amd64 \
         --mode debian \
+	--system live \
+	--interactive false \
 	--debootstrap-options "--include=apt-transport-https,ca-certificates,openssl" \
         --mirror-bootstrap "https://deb.debian.org/debian/" \
         --mirror-chroot "https://deb.debian.org/debian/" \
         --mirror-binary "https://deb.debian.org/debian/" \
         --mirror-chroot-security "https://security.debian.org" \
+	--bootloader grub-efi \
+	--grub-splash /usr/share/live/build/bootloaders/grub-pc/splash.png \
+	--security true \
+	--updates true \
+	--binary-filesystem ext4 \
+	--binary-image iso-hybrid \
+	--checksums sha256 \
+	--debian-installer live \
+	--debian-installer-gui true \
+	--firmware-binary true \
+	--firmware-chroot true \
+	--initramfs live-boot \
+	--iso-publisher Live Build \
+	--iso-volume Latest \
         --bootappend-live "boot=live toram mds=full,nosmt iommu=off selinux=1 security=selinux noacpi noefi" \
+	--bootappend-live-failsafe "boot=live selinux=1 security=selinux" \
         --debian-installer live \
         --linux-packages "linux-image linux-headers" \
         --archive-areas "main contrib non-free" \
-        --uefi-secure-boot auto \
+        --uefi-secure-boot enable \
+	--win32-loader false \
+	--loadlin false \
+	--memtest none \
+	--zsync false \
         --source "${_SOURCE}" \
 "${@}"
