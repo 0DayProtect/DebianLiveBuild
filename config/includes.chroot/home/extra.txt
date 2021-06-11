@@ -1,0 +1,33 @@
+#!/bin/bash
+
+cd /opt/
+
+#Ghidra 10
+wget -c https://ghidra-sre.org/ghidra_10.0-BETA_PUBLIC_20210521.zip
+unzip ghidra_10.0-BETA_PUBLIC_20210521.zip
+rm -r unzip ghidra_10.0-BETA_PUBLIC_20210521.zip
+
+#Ghidra efiSeek
+wget -c https://github.com/DSecurity/efiSeek/archive/refs/heads/master.zip -O efiSeek-master.zip
+unzip efiSeek-master.zip
+rm -r efiSeek-master.zip
+
+#Gidhra ghidra-firmware-utils
+wget -c https://github.com/al3xtjames/ghidra-firmware-utils/archive/refs/heads/master.zip -O ghidra-firmware-utils-master.zip
+unzip ghidra-firmware-utils-master.zip
+rm -r ghidra-firmware-utils-master.zip
+
+#Gidhra Ghidra-EFI-Byte-Code-Processor
+wget -c https://github.com/meromwolff/Ghidra-EFI-Byte-Code-Processor/archive/refs/heads/master.zip -O Ghidra-EFI-Byte-Code-Processor-master.zip
+unzip Ghidra-EFI-Byte-Code-Processor-master.zip
+rm -r Ghidra-EFI-Byte-Code-Processor-master.zip
+
+#ChipSec
+wget -c https://github.com/chipsec/chipsec/archive/refs/heads/master.zip -O chipsec-master.zip
+unzip chipsec-master.zip
+rm -r chipsec-master.zip
+
+#Coreboot
+wget -c https://github.com/coreboot/coreboot/archive/refs/heads/master.zip -O coreboot-master.zip
+unzip coreboot-master.zip
+rm -r coreboot-master.zip

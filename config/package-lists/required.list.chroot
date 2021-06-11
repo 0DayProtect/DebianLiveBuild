@@ -55,7 +55,6 @@ policycoreutils-sandbox
 acpica-tools
 acpi
 acpitail
-tpm2-tools
 mlocate
 p7zip
 innoextract
@@ -74,16 +73,33 @@ whois
 tcptrace
 tcptrack
 ssldump
-tpm2-tools
 nvidia-detect
 nvidia-driver
 vdpau-driver-all
 
 #Encryption
+keepassxc
+yubikey-personalization-gui
+yubikey-manager
 yubioath-desktop
 zulumount-gui
 zulucrypt-gui
 dislocker
+
+#Ghidra
+default-jdk
+
+#EFI Variables
+efivar
+efibootmgr
+efitools
+uefitool-cli
+
+#tpm
+tss2
+tpm2-tools
+#trousers
+
 
 #Bootloaders
 #extlinux
