@@ -23,8 +23,8 @@ lb config noauto \
         --mirror-bootstrap "https://deb.debian.org/debian/" \
         --mirror-chroot "https://deb.debian.org/debian/" \
         --mirror-binary "https://deb.debian.org/debian/" \
-        --mirror-chroot-security "https://security.debian.org" \
-	--bootloader syslinux \
+        --mirror-chroot-security "https://security.debian.org/debian-security/" \
+	--bootloader grub-efi \
 	--security true \
 	--updates true \
 	--binary-filesystem ext4 \
@@ -37,8 +37,8 @@ lb config noauto \
 	--initramfs live-boot \
 	--iso-publisher Live Build \
 	--iso-volume Latest \
-        --bootappend-live "boot=live components toram mds=full,nosmt iommu=off selinux=1 security=selinux noacpi noefi" \
-	--bootappend-live-failsafe "boot=live components toram selinux=1 security=selinux" \
+        --bootappend-live "boot=live components selinux=1 security=selinux toram mds=full,nosmt iommu=off noacpi noefi" \
+	--bootappend-live-failsafe "boot=live components selinux=1 security=selinux toram" \
         --debian-installer live \
         --linux-packages "linux-image linux-headers" \
         --archive-areas "main contrib non-free" \

@@ -1,0 +1,9 @@
+#!/bin/sh
+
+echo "I: running $0"
+
+#clear APT package download cache to reduce the image size
+rm -vr /var/lib/apt/lists/
+
+#clear APT package list cache to reduce the image size
+rm -vr /var/cache/apt/

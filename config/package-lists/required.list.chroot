@@ -1,18 +1,23 @@
 #Tools
 git
+ufw
+lshw
+libndctl-dev
+ndctl
 flashrom
 sbsigntool
+strace
 gufw
+gparted
+disktype
 network-manager-openvpn
 network-manager-openvpn-gnome
 virt-manager
 torbrowser-launcher
 uefitool
-etherape
 traceroute
 lsof
 htop
-live-build
 binwalk
 testdisk
 macchanger
@@ -24,6 +29,10 @@ ppp
 microcom
 unhide
 unhide.rb
+
+#Live
+live-build
+
 
 #Firmware
 firmware-linux-nonfree
@@ -51,7 +60,6 @@ setools-gui
 policycoreutils-dbus
 policycoreutils-gui
 policycoreutils-sandbox
-
 acpica-tools
 acpi
 acpitail
@@ -95,14 +103,10 @@ efibootmgr
 efitools
 uefitool-cli
 
-#tpm
-tss2
+#Tpm
 tpm2-tools
-#trousers
 
-
-#Bootloaders
-#extlinux
-#pxelinux
-#syslinux
-#isolinux
+#Boot
+grub-efi-amd64-signed
+grub-common
+grub2-common
