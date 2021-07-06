@@ -107,6 +107,8 @@ uefitool-cli
 tpm2-tools
 
 #Boot
+grub-efi-amd64
 grub-efi-amd64-signed
 grub-common
 grub2-common
+hardening-runtime
