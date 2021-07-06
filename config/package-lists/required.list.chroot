@@ -87,10 +87,7 @@ vdpau-driver-all
 nvidia-smi
 nvidia-detect
 nvidia-modprobe
-xserver-xorg-video-nvidia-tesla-460
-nvidia-tesla-460-smi
-nvidia-tesla-460-kernel-support
-nvidia-tesla-460-driver
+nvidia-driver
 
 #Encryption
 keepassxc
