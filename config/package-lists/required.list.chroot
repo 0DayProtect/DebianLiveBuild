@@ -81,9 +81,16 @@ whois
 tcptrace
 tcptrack
 ssldump
-nvidia-detect
-nvidia-driver
 vdpau-driver-all
+
+#Nvidia
+nvidia-smi
+nvidia-detect
+nvidia-modprobe
+xserver-xorg-video-nvidia-tesla-460
+nvidia-tesla-460-smi
+nvidia-tesla-460-kernel-support
+nvidia-tesla-460-driver
 
 #Encryption
 keepassxc

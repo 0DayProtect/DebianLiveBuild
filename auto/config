@@ -37,15 +37,22 @@ lb config noauto \
 	--initramfs live-boot \
 	--iso-publisher Live Build \
 	--iso-volume Latest \
+	--build-with-chroot true \
+	--cache false \
+	--cache-indices false \
+	--cache-packages false \
+	--apt-source-archives false \
         --bootappend-live "boot=live components selinux=1 security=selinux toram mds=full,nosmt iommu=off noacpi noefi" \
 	--bootappend-live-failsafe "boot=live components selinux=1 security=selinux toram" \
         --debian-installer live \
         --linux-packages "linux-image linux-headers" \
         --archive-areas "main contrib non-free" \
         --uefi-secure-boot enable \
-	--win32-loader false \
 	--loadlin false \
 	--memtest none \
 	--zsync false \
+	--net-tarball false \
+	--verbose \
+	--win32-loader false \
         --source "${_SOURCE}" \
 "${@}"
