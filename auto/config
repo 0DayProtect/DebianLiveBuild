@@ -42,7 +42,7 @@ lb config noauto \
 	--cache-indices false \
 	--cache-packages false \
 	--apt-source-archives false \
-        --bootappend-live "boot=live components selinux=1 security=selinux toram mds=full,nosmt iommu=off noacpi noefi" \
+        --bootappend-live "boot=live components selinux=1 security=selinux mds=full,nosmt iommu=off noacpi noefi toram" \
 	--bootappend-live-failsafe "boot=live components selinux=1 security=selinux toram" \
         --debian-installer live \
         --linux-packages "linux-image linux-headers" \

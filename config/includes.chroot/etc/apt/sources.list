@@ -1,6 +1,6 @@
-deb https://deb.debian.org/debian/ bullseye main contrib non-free
-deb-src https://deb.debian.org/debian/ bullseye main contrib non-free
-deb https://security.debian.org/ bullseye-security main contrib non-free
-deb-src https://security.debian.org/ bullseye-security main contrib non-free
-deb https://deb.debian.org/debian/ bullseye-updates main contrib non-free
-deb-src https://deb.debian.org/debian/ bullseye-updates main contrib non-free
+deb https://deb.debian.org/debian/ testing main contrib non-free
+deb-src https://deb.debian.org/debian/ testing main contrib non-free
+deb https://security.debian.org/ testing-security main contrib non-free
+deb-src https://security.debian.org/ testing-security main contrib non-free
+deb https://deb.debian.org/debian/ testing-updates main contrib non-free
+deb-src https://deb.debian.org/debian/ testing-updates main contrib non-free
