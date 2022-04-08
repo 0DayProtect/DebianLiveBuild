@@ -133,7 +133,7 @@ grub-efi-amd64-signed
 grub-common
 grub-rescue-pc
 grub-coreboot
-rub-coreboot-bin
+grub-coreboot-bin
 grub2
 grub2-common
 hardening-runtime
