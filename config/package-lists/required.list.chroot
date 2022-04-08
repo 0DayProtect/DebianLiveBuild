@@ -13,6 +13,7 @@ disktype
 network-manager-openvpn
 network-manager-openvpn-gnome
 virt-manager
+ovmf
 torbrowser-launcher
 uefitool
 traceroute
