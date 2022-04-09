@@ -1,0 +1,426 @@
+
+############################
+#### arb-common_6.0.6-5_all.deb
+############################
+
+### Description: ARB PT-server administrators:
+#   The default configuration of PT-server slots in /etc/arb/arb_tcp.dat
+#   gives ARB three global slots accessible by all users (connecting to
+#   localhost:${PORT}), as well as three slots to give private per-user
+#   access (connecting to ~/.arb_pts/${USER}${NUMBER}.socket).
+#   .
+#   Only members of the "arb" system group will be able to build and update
+#   the shared PT-servers. Please enter the login names for these privileged
+#   users.
+# d-i arb/group multiselect <choice(s)>
+# Possible choices: ${users}
+
+############################
+#### distributed-net_2.9112.521+arm64-2_amd64.deb
+############################
+
+### Description: Run the distributed.net client configuration utility?
+#   The distributed.net client needs to be configured before it can be used.
+#   While most options have reasonable defaults, you need to specify the e-mail
+#   address to which you would like distributed.net to credit any work done by
+#   the client. If you are installing the distributed-net package for the first
+#   time, then you must configure the client, otherwise the distributed.net client
+#   will refuse to start.
+#   .
+#   When the distributed.net client is run as a daemon (via /etc/init.d/distributed-net),
+#   the output will be redirected to /var/log/distributed-net.log. You do not
+#   need to set up a log file. Since the init script is controlling the
+#   distributed.net client, you should not enable "quiet mode" as that breaks the
+#   init script.
+# d-i distributed-net/fullconfig boolean false
+
+############################
+#### fex_20160919-2_all.deb
+############################
+
+### Description: Last installed version for internal use
+#   To upgrade the htdocs dir postinst needs to know the last installed 
+#   version and verify its htdocs contents to the internal database
+#   and make sure only unaltered files are overwritten.
+# d-i fex/lastver string 0
+
+############################
+#### firmware-ipw2x00_20210818-1_all.deb
+############################
+
+### Description: Do you agree to the "Intel Pro Wireless 2100 and 2200/2915 License"?
+#   In order to install this package, you must agree to the following terms,
+#   the "Intel Pro Wireless 2100 and 2200/2915 License". If you do not agree,
+#   the installation will be canceled.
+#   .
+#   SOFTWARE LICENSE AGREEMENT (Final, Single User)
+#   .
+#   Do not use or load this firmware image (the "Software") until you have
+#   carefully read the following terms and conditions.  By loading or using
+#   the Software, you agree to the terms of this Agreement.  If you do not
+#   wish to so agree, do not install or use the Software.
+#   .
+#   LICENSE. You may copy and use the Software, subject to these conditions:
+#   .
+#   1. This Software is licensed for use only in conjunction with Intel
+#   component products.  Use of the Software in conjunction with non-Intel
+#   component  products is not licensed hereunder.
+#   .
+#   2. You may not copy, modify, rent, sell, distribute or transfer any part
+#   of the Software except as provided in this Agreement, and you agree to
+#   prevent unauthorized copying of the Software.
+#   .
+#   3. You may not reverse engineer, decompile, or disassemble the Software.
+#   .
+#   4. You may not sublicense the Software.
+#   .
+#   5. The Software may contain the software or other property of third party
+#   suppliers.
+#   .
+#   OWNERSHIP OF SOFTWARE AND COPYRIGHTS. Title to all copies of the Software
+#   remains with Intel or its suppliers.  The Software is copyrighted and
+#   protected by the laws of the United States and other countries, and
+#   international treaty provisions.  You may not remove any copyright notices
+#   from the Software.  Intel may make changes to the Software, or items
+#   referenced therein, at any time without notice, but is not obligated to
+#   support or update the Software.  Except as otherwise expressly provided,
+#   Intel grants no express or implied right under Intel patents, copyrights,
+#   trademarks, or other intellectual property rights.  You may transfer the
+#   Software only if a copy of this license accompanies the  Software and the
+#   recipient agrees to be fully bound by these terms.
+#   .
+#   EXCLUSION OF OTHER WARRANTIES EXCEPT AS PROVIDED ABOVE, THE SOFTWARE IS
+#   PROVIDED "AS IS" WITHOUT ANY EXPRESS OR IMPLIED WARRANTY OF ANY KIND
+#   INCLUDING WARRANTIES OF MERCHANTABILITY, NONINFRINGEMENT, OR FITNESS FOR A
+#   PARTICULAR PURPOSE. Intel does not warrant or assume responsibility for
+#   the accuracy or completeness of any information, text, graphics, links or
+#   other items contained within the Software.
+#   .
+#   LIMITATION OF LIABILITY. IN NO EVENT SHALL INTEL OR ITS SUPPLIERS BE
+#   LIABLE FOR ANY DAMAGES WHATSOEVER (INCLUDING, WITHOUT LIMITATION, LOST
+#   PROFITS, BUSINESS INTERRUPTION, OR LOST INFORMATION) ARISING OUT OF THE
+#   USE OF OR INABILITY TO USE THE SOFTWARE, EVEN IF INTEL HAS BEEN ADVISED OF
+#   THE POSSIBILITY OF SUCH DAMAGES. SOME JURISDICTIONS PROHIBIT EXCLUSION OR
+#   LIMITATION OF LIABILITY FOR IMPLIED WARRANTIES OR CONSEQUENTIAL OR
+#   INCIDENTAL DAMAGES, SO THE ABOVE LIMITATION MAY NOT APPLY TO YOU. YOU MAY
+#   ALSO HAVE OTHER LEGAL RIGHTS THAT VARY BETWEEN JURISDICTIONS.
+#   .
+#   TERMINATION OF THIS AGREEMENT. Intel may terminate this Agreement at any
+#   time if you violate its terms.  Upon termination, you will immediately
+#   destroy the Software.
+#   .
+#   APPLICABLE LAWS. Claims arising under this Agreement shall be governed by
+#   the laws of California, excluding its principles of conflict of laws and
+#   the United Nations Convention on Contracts for the Sale of Goods.  You may
+#   not export the Software in violation of applicable export laws and
+#   regulations.  Intel is not obligated under any other agreements unless
+#   they are in writing and signed by an authorized representative  of Intel.
+#   .
+#   GOVERNMENT RESTRICTED RIGHTS. The Software is provided with "RESTRICTED
+#   RIGHTS." Use, duplication, or disclosure by the Government is subject to
+#   restrictions as set forth in FAR52.227-14 and DFAR252.227-7013 et seq.  or
+#   their successors.  Use of the Software by the Government constitutes
+#   acknowledgment of Intel's proprietary rights therein.  Contractor or
+#   Manufacturer is Intel Corporation, 2200 Mission College Blvd., Santa
+#   Clara, CA 95052.
+# d-i firmware-ipw2x00/license/accepted boolean false
+
+############################
+#### firmware-ivtv_20210818-1_all.deb
+############################
+
+### Description: Do you agree to the "Hauppauge End-User Firmware License Agreement"?
+#   In order to install this package, you must agree to the following terms,
+#   the "Hauppauge End-User Firmware License Agreement". If you do not agree,
+#   the installation will be canceled.
+#   .
+#   END-USER FIRMWARE LICENSE AGREEMENT
+#   .
+#   IMPORTANT - PLEASE READ BEFORE COPYING, INSTALLING OR USING.
+#   .
+#   Do not use or load this firmware image (the "Firmware") until you have
+#   carefully read the following terms and conditions.  By loading or using
+#   the Firmware, you agree to the terms of this Agreement.  If you do not
+#   wish to so agree, do not install or use the Firmware.
+#   .
+#   LICENSEES: Please note:
+#   .
+#   * If you are an End-User, only the END-USER FIRMWARE LICENSE AGREEMENT
+#   applies (this license).
+#   .
+#   * If you are an Original Equipment Manufacturer (OEM), Independent
+#   Hardware Vendor (IHV), or Independent Firmware Vendor (ISV), the
+#   OEM/IHV/ISVFIRMWARE LICENSE AGREEMENT applies, as well as the   END-USER
+#   FIRMWARE LICENSE AGREEMENT (this license).
+#   .
+#   LICENSE. You may copy and use the Firmware, subject to these conditions:
+#   .
+#   1. This Firmware is licensed for use only in conjunction with    Hauppauge
+#   component products.  Use of the Firmware in conjunction    with
+#   non-Hauppauge component products is not licensed hereunder.
+#   .
+#   2. You may not copy, modify, rent, sell, distribute or transfer any
+#   part of the Firmware except as provided in this Agreement, and you
+#   agree to prevent unauthorized copying of the Firmware.
+#   .
+#   3. You may not reverse engineer, decompile, or disassemble the Firmware.
+#   .
+#   4. You may not sublicense the Firmware.
+#   .
+#   5. The Firmware may contain the firmware or other property of third party
+#   suppliers.
+#   .
+#   TRADEMARKS. Except as expressly provided herein, you shall not use
+#   Hauppauge's name in any publications, advertisements, or other
+#   announcements without Hauppauge's prior written consent.  You do not have
+#   any rights to use any Hauppauge trademarks or logos.
+#   .
+#   OWNERSHIP OF FIRMWARE AND COPYRIGHTS. Title to all copies of the Firmware
+#   remains with Hauppauge or its suppliers.  The Firmware is copyrighted and
+#   protected by the laws of the United States and other countries, and
+#   international treaty provisions.  You may not remove any copyright notices
+#   from the Firmware.  Hauppauge may make changes to the Firmware, or items
+#   referenced therein, at any time without notice, but is not obligated to
+#   support or update the Firmware.  Except as otherwise expressly provided,
+#   Hauppauge grants no express or implied right under Hauppauge patents,
+#   copyrights, trademarks, or other intellectual property rights.  You may
+#   transfer the Firmware only if a copy of this license accompanies the
+#   Firmware and the recipient agrees to be fully bound by these terms.
+#   .
+#   EXCLUSION OF WARRANTIES. THE FIRMWARE IS PROVIDED "AS IS" AND POSSIBLY
+#   WITH FAULTS. UNLESS EXPRESSLY AGREED OTHERWISE, HAUPPAUGE AND ITS
+#   SUPPLIERS AND LICENSORS DISCLAIM ANY AND ALL WARRANTIES AND GUARANTEES,
+#   EXPRESS, IMPLIED OR OTHERWISE, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+#   OF MERCHANTABILITY, NONINFRINGEMENT, OR FITNESS FOR A PARTICULAR PURPOSE.
+#   Hauppauge does not warrant or assume responsibility for the accuracy or
+#   completeness of any information, text, graphics, links or other items
+#   contained within the Firmware.  You assume all liability, financial or
+#   otherwise, associated with Your use or disposition of the Firmware.
+#   .
+#   LIMITATION OF LIABILITY. IN NO EVENT SHALL HAUPPAUGE OR ITS SUPPLIERS AND
+#   LICENSORS BE LIABLE FOR ANY DAMAGES WHATSOEVER FROM ANY CAUSE OF ACTION OF
+#   ANY KIND (INCLUDING, WITHOUT LIMITATION, LOST PROFITS, BUSINESS
+#   INTERRUPTION, OR LOST INFORMATION) ARISING OUT OF THE USE, MODIFICATION,
+#   OR INABILITY TO USE THE FIRMWARE, OR OTHERWISE, NOR FOR PUNITIVE,
+#   INCIDENTAL, CONSEQUENTIAL, OR SPECIAL DAMAGES OF ANY KIND, EVEN IF
+#   HAUPPAUGE OR ITS SUPPLIERS AND LICENSORS HAVE BEEN ADVISED OF THE
+#   POSSIBILITY OF SUCH DAMAGES. SOME JURISDICTIONS PROHIBIT EXCLUSION OR
+#   LIMITATION OF LIABILITY FOR IMPLIED WARRANTIES OR CONSEQUENTIAL OR
+#   INCIDENTAL DAMAGES, SO CERTAIN LIMITATIONS MAY NOT APPLY. YOU MAY ALSO
+#   HAVE OTHER LEGAL RIGHTS THAT VARY BETWEEN JURISDICTIONS.
+#   .
+#   WAIVER AND AMENDMENT. No modification, amendment or waiver of any
+#   provision of this Agreement shall be effective unless in writing and
+#   signed by an officer of Hauppauge.  No failure or delay in exercising any
+#   right, power, or remedy under this Agreement shall operate as a waiver of
+#   any such right, power or remedy.  Without limiting the foregoing, terms
+#   and conditions on any purchase orders or similar materials submitted by
+#   you to Hauppauge, and any terms contained in Hauppauges standard
+#   acknowledgment form that are in conflict with these terms, shall be of no
+#   force or effect.
+#   .
+#   SEVERABILITY. If any provision of this Agreement is held by a court of
+#   competent jurisdiction to be contrary to law, such provision shall be
+#   changed and interpreted so as to best accomplish the objectives of the
+#   original provision to the fullest extent allowed by law and the remaining
+#   provisions of this Agreement shall remain in full force and effect.
+#   .
+#   EXPORT RESTRICTIONS. Each party acknowledges that the Firmware is subject
+#   to applicable import and export regulations of the United States and of
+#   the countries in which each party transacts business, specifically
+#   including U.S. Export Administration Act and Export Administration
+#   Regulations.  Each party shall comply with such laws and regulations, as
+#   well as all other laws and regulations applicable to the Firmware.
+#   Without limiting the generality of the foregoing, each party agrees that
+#   it will not export, re-export, transfer or divert any of the Firmware or
+#   the direct programs thereof to any restricted place or party in accordance
+#   with U.S. export regulations.  Note that Firmware containing encryption
+#   may be subject to additional restrictions.
+#   .
+#   APPLICABLE LAWS. Claims arising under this Agreement shall be governed by
+#   the laws of New York, excluding its principles of conflict of laws and the
+#   United Nations Convention on Contracts for the Sale of Goods.  You may not
+#   export the Firmware in violation of applicable export laws and
+#   regulations.  Hauppauge is not obligated under any other agreements unless
+#   they are in writing and signed by an authorized representative of
+#   Hauppauge.
+#   .
+#   GOVERNMENT RESTRICTED RIGHTS. The Firmware is provided with "RESTRICTED
+#   RIGHTS." Use, duplication, or disclosure by the Government is subject to
+#   restrictions as set forth in FAR52.227-14 and DFAR252.227-7013 et seq.  or
+#   their successors.  Use of the Firmware by the Government constitutes
+#   acknowledgment of Hauppauge's proprietary rights therein.  Contractor or
+#   Manufacturer is Hauppauge Computer Works, Inc.  91 Cabot Court Hauppauge,
+#   NY 11788
+#   .
+#   TERMINATION OF THIS AGREEMENT. Hauppauge may terminate this Agreement at
+#   any time if you violate its terms.  Upon termination, you will immediately
+#   destroy the Firmware or return all copies of the Firmware to Hauppauge.
+# d-i firmware-ivtv/license/accepted boolean false
+
+############################
+#### libmkl-dev_2020.4.304-2_amd64.deb
+############################
+
+### Description: Use libmkl_rt.so as the default alternative to BLAS/LAPACK?
+#   Intel MKL's Single Dynamic Library (SDL) is installed on your machine. This
+#   shared object can be used as an alternative to both libblas.so.3 and
+#   liblapack.so.3, so that packages built against BLAS/LAPACK can directly use
+#   MKL without rebuild.
+#   .
+#   However, MKL is non-free software, and in particular its source code is not
+#   publicly available. By using MKL as the default BLAS/LAPACK implementation,
+#   you might be violating the licensing terms of copyleft software that would
+#   become dynamically linked against it. Please verify that the licensing terms
+#   of the program(s) that you intend to use with MKL are compatible with the MKL
+#   licensing terms. For the case of software under the GNU General Public
+#   License, you may want to read this FAQ:
+#   .
+#       https://www.gnu.org/licenses/gpl-faq.html#GPLIncompatibleLibs
+#   .
+#   If you don't know what MKL is, or unwilling to set it as default, just choose
+#   the preset value or simply type Enter.
+# d-i libmkl-rt/use-as-default-blas-lapack boolean false
+
+### Description: Which of the these alternatives should point to MKL?
+#   Please select the alternatives that should point to MKL.
+#   The selection applies to all available architectures, and the related
+#   development packages will follow the same selection.
+#   .
+#   Typically the user may want to point both BLAS/LAPACK to MKL (libmkl_rt.so).
+#   Type Enter if you are not sure what to select.
+# d-i libmkl-rt/exact-so-3-selections multiselect libblas.so.3, liblapack.so.3, libblas64.so.3, liblapack64.so.3,
+# Possible choices: libblas.so.3, liblapack.so.3, libblas64.so.3, liblapack64.so.3,
+
+############################
+#### libmkl-rt_2020.4.304-2_amd64.deb
+############################
+
+### Description: Use libmkl_rt.so as the default alternative to BLAS/LAPACK?
+#   Intel MKL's Single Dynamic Library (SDL) is installed on your machine. This
+#   shared object can be used as an alternative to both libblas.so.3 and
+#   liblapack.so.3, so that packages built against BLAS/LAPACK can directly use
+#   MKL without rebuild.
+#   .
+#   However, MKL is non-free software, and in particular its source code is not
+#   publicly available. By using MKL as the default BLAS/LAPACK implementation,
+#   you might be violating the licensing terms of copyleft software that would
+#   become dynamically linked against it. Please verify that the licensing terms
+#   of the program(s) that you intend to use with MKL are compatible with the MKL
+#   licensing terms. For the case of software under the GNU General Public
+#   License, you may want to read this FAQ:
+#   .
+#       https://www.gnu.org/licenses/gpl-faq.html#GPLIncompatibleLibs
+#   .
+#   If you don't know what MKL is, or unwilling to set it as default, just choose
+#   the preset value or simply type Enter.
+# d-i libmkl-rt/use-as-default-blas-lapack boolean false
+
+### Description: Which of the these alternatives should point to MKL?
+#   Please select the alternatives that should point to MKL.
+#   The selection applies to all available architectures, and the related
+#   development packages will follow the same selection.
+#   .
+#   Typically the user may want to point both BLAS/LAPACK to MKL (libmkl_rt.so).
+#   Type Enter if you are not sure what to select.
+# d-i libmkl-rt/exact-so-3-selections multiselect libblas.so.3, liblapack.so.3, libblas64.so.3, liblapack64.so.3,
+# Possible choices: libblas.so.3, liblapack.so.3, libblas64.so.3, liblapack64.so.3,
+
+############################
+#### kstars-data-extra-tycho2_1.1r1-9.1_all.deb
+############################
+
+### Description: Action for the /etc/kde4/kstarsrc file:
+#   A kstars global configuration file already exists.
+#   .
+#   The package installation process can't modify it, but you can
+#   back it up now and create a new one. You will be prompted for
+#   options in this file.
+# d-i kstars-data-extra/kstarsrc-exists select keep
+# Possible choices: keep, replace (preserving backup), overwrite
+
+### Description: Create /etc/kde4/kstarsrc file?
+#   There is no kstars global configuration file. 
+#   .
+#   A configuration file will be needed if user downloads should be
+#   disabled, but if not then it is still safe to create one. You will
+#   be prompted for options in this file.
+# d-i kstars-data-extra/kstarsrc-does-not-exist boolean true
+
+### Description: User data downloads for kstars:
+#   KStars has a download feature allowing users to download extra data
+#   files for their own use. Since packaged catalogs can be handled more
+#   efficiently by installing a single central copy, you may wish to
+#   restrict the use of this feature.
+#   .
+#    * enable - users will be able to download data files;
+#    * disable - individual users can re-enable data downloads (to
+#      download other data files) in their .kstarsrc;
+#    * lock - users cannot enable data downloads.
+# d-i kstars-data-extra/disable-downloads select lock
+# Possible choices: enable, disable, lock
+
+### Description: for internal use
+#   Not shown question to hold some data in the database
+# d-i kstars-data-extra/kstarsrc-previously-exists select unset
+# Possible choices: unset, previously exists, does not exist
+
+############################
+#### nvidia-cudnn_8.2.4.15~cuda11.4_amd64.deb
+############################
+
+### Description: Do you agree to all terms of the Nvidia cuDNN License Agreement?
+#   Nvidia cuDNN License Agreement
+# d-i nvidia-cudnn/question select <choice>
+# Possible choices: I Decline, I Agree
+
+############################
+#### nvidia-legacy-check_470.103.01-3_amd64.deb
+############################
+
+### Description: for internal use
+#   Can be preseeded. If set to false, disables the check for
+#   old GPUs that require a legacy driver instead of this driver.
+# d-i nvidia-driver/check-for-unsupported-gpu boolean true
+
+### Description: for internal use
+#   Remembers the name of the legacy driver where the
+#   install-even-if-unsupported-gpu-exists question was answered with "yes".
+#   The question will be asked again if the legacy driver name changes.
+# d-i nvidia-driver/supported-in-legacy-driver-name string 
+
+### Description: Install ${vendor} driver despite unsupported graphics card?
+#   This system has a graphics card which is no longer handled by the ${vendor}
+#   driver (package ${driver}). You may wish to keep the package installed -
+#   for instance to drive some other card - but the card with the following
+#   chipset won't be usable:
+#   .
+#   ${unsupported-device}
+#   .
+#   The above card requires either the non-free legacy ${vendor} driver
+#   (package ${legacy_driver}) or the free ${free_name} driver
+#   (package ${free_driver}).
+#   .
+#   Use the update-glx command to switch between different installed drivers.
+#   .
+#   Before the ${free_name} driver can be used you must
+#   remove ${vendor} configuration from xorg.conf (and xorg.conf.d/).
+# d-i nvidia-driver/install-even-if-unsupported-gpu-exists boolean false
+
+############################
+#### trn4_4.0-test77-14_amd64.deb
+############################
+
+### Description: What news server should be used for reading and posting news?
+#   trn is configured to read news via an NNTP connection, and needs to know
+#   the fully-qualified host name of the server (such as news.example.com). If
+#   you have a local news spool, you should consider installing some NNTP
+#   server like inn2; in that case, enter "localhost" as your news server.
+# d-i shared/news/server string <string>
+
+### Description: What is your system's mail name?
+#   Please enter the 'mail name' of your system. This is the hostname portion
+#   of the address to be shown on outgoing news and mail messages, and is used
+#   by many packages. trn4 users may override this individually by setting the
+#   FROM environment variable.
+# d-i trn4/mail-name string <string>
