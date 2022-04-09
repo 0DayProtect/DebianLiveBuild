@@ -18774,7 +18774,7 @@ ose_modules multiselect <choice(s)>
 #   unbootable state. Alternatives to automatically installing rEFInd include
 #   running /usr/sbin/refind-install by hand or installing the rEFInd binaries
 #   manually by copying them from subdirectories of /usr/share/refind-{version}.
-d-i refind/install_to_esp boolean false
+# d-i refind/install_to_esp boolean false
 
 ############################
 #### request-tracker4_4.4.4+dfsg-3_all.deb
