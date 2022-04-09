@@ -96,12 +96,6 @@ tcptrack
 ssldump
 vdpau-driver-all
 
-#Nvidia
-nvidia-smi
-nvidia-detect
-nvidia-modprobe
-nvidia-driver
-
 #Encryption
 keepassxc
 yubikey-personalization-gui
