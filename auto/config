@@ -19,7 +19,7 @@ lb config noauto \
         --mode debian \
 	--distribution testing \
 	--system live \
-	--interactive false \
+	--interactive shell \
 	--debootstrap-options "--include=apt-transport-https,ca-certificates,openssl" \
         --mirror-bootstrap "https://deb.debian.org/debian/" \
         --mirror-chroot "https://deb.debian.org/debian/" \
