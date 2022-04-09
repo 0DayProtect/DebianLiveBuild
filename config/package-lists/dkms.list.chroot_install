@@ -8,8 +8,4 @@
 	# fglrx-driver
 
 	# nvidia-graphics-drivers
-	nvidia-kernel-dkms
-	xserver-xorg-video-nvidia
-	nvidia-settings
-	nvidia-xconfig
 #endif
