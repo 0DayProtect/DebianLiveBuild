@@ -126,12 +126,10 @@ grub-firmware-qemu
 grub-theme-breeze
 grub-theme-starfield
 multiboot
-grub-efi
 grub-efi-amd64
 grub-efi-amd64-bin
 grub-efi-amd64-signed
 grub-common
-grub2
 grub2-common
 hardening-runtime
 
