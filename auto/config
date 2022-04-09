@@ -17,6 +17,7 @@ lb config noauto \
         --ignore-system-defaults \
 	--architectures amd64 \
         --mode debian \
+	--distribution testing \
 	--system live \
 	--interactive false \
 	--debootstrap-options "--include=apt-transport-https,ca-certificates,openssl" \
