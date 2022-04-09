@@ -11,7 +11,8 @@
 #   .
 #   Note that if you select a component that requires others, those
 #   components will also be loaded.
-# d-i anna/choose_modules multiselect <choice(s)>
+# d-i anna/cho
+ose_modules multiselect <choice(s)>
 # Possible choices: ${CHOICES}
 
 ### Description: Installer components to load:
@@ -18773,7 +18774,7 @@
 #   unbootable state. Alternatives to automatically installing rEFInd include
 #   running /usr/sbin/refind-install by hand or installing the rEFInd binaries
 #   manually by copying them from subdirectories of /usr/share/refind-{version}.
-# d-i refind/install_to_esp boolean true
+d-i refind/install_to_esp boolean false
 
 ############################
 #### request-tracker4_4.4.4+dfsg-3_all.deb
