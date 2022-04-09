@@ -9,7 +9,6 @@ sbsigntool
 strace
 gufw
 gparted
-disktype
 network-manager-openvpn
 network-manager-openvpn-gnome
 virt-manager
@@ -69,7 +68,7 @@ acpitail
 mlocate
 p7zip
 innoextract
-python-pip-whl
+python3-pip-whl
 build-essential
 python3-setuptools
 python3-dev
