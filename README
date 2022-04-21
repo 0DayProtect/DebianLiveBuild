@@ -1,0 +1,44 @@
+REABASE 6692ccbd12741e68f47afd227913bb75c86b2b85 REBASE
+
+This configuration tree for:
+
+  Debian Testing Xfce Desktop Live
+
+Download Testing Xfce Desktop ISO
+Mount external storage then build
+
+	SELinux
+	Flashrom
+	Virt-Manager
+	TorBrowser Launcher
+	Forensics Tools
+
+
+"Once they get it into your firmware. Your fucked"
+
+*Debian Branch
+https://salsa.debian.org/live-team/live-images
+https://salsa.debian.org/live-team/live-images/-/tree/debian
+
+https://cdimage.debian.org/cdimage/weekly-live-builds/amd64/iso-hybrid/
+https://cdimage.debian.org/cdimage/weekly-live-builds/amd64/iso-hybrid/debian-live-testing-amd64-xfce.iso
+
+
+A software called live-build can be used to automatically build images from
+this configuration tree.
+
+live-build can be obtained from <https://salsa.debian.org/live-team/live-build>.
+On Debian based systems, live-build can be installed with:
+
+  # apt-get install live-build
+
+live-build can be used to build this image with the following command executed
+in this directory::
+
+  # lb build
+
+More information about live-build and the Live Systems project can be found on
+its homepage at <https://wiki.debian.org/DebianLive> and in the manual at
+<https://live-team.pages.debian.net/live-manual/>.
+
+
