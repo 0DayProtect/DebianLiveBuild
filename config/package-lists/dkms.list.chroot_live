@@ -1,5 +1,0 @@
-# open-vm-tools
-
-#if PARENT_ARCHIVE_AREAS contrib
-	# virtualbox
-#endif

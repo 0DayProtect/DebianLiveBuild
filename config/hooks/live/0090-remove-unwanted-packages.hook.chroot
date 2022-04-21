@@ -1,8 +1,0 @@
-#!/bin/sh
-
-echo "I: running $0"
-apt purge -y exim4-base nfs-common rpcbind geoclue* pipewire colord xiccd \
-ibus* xdg-desktop-portal-gtk xdg-user-dirs tumbler rtkit packagekit* gvfs* \
-at-spi2-core fcitx* mlterm* synaptic xiterm+thai xterm uim* xfce4-goodies \
-xfce4-dict plymouth* plymouth-x11*
-apt -y autoremove
