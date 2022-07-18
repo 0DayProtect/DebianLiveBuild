@@ -39,7 +39,6 @@ firmware-linux-nonfree
 firmware-linux-free
 firmware-linux
 firmware-iwlwifi
-firmware-ipw2x00
 firmware-brcm80211
 firmware-realtek
 broadcom-sta-dkms
@@ -82,12 +81,6 @@ tcptrace
 tcptrack
 ssldump
 vdpau-driver-all
-
-#Nvidia
-nvidia-smi
-nvidia-detect
-nvidia-modprobe
-nvidia-driver
 
 #Encryption
 keepassxc
