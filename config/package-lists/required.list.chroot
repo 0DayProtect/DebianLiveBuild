@@ -1,6 +1,5 @@
 #Tools
 git
-ufw
 lshw
 libndctl-dev
 ndctl
@@ -65,7 +64,9 @@ acpitail
 mlocate
 p7zip
 innoextract
-python-pip-whl
+python3-pip
+python3-wheel
+python3-pip-whl
 build-essential
 python3-setuptools
 python3-dev
@@ -84,7 +85,7 @@ vdpau-driver-all
 
 #Encryption
 keepassxc
-yubikey-personalization-gui
+yubikey-personalization
 yubikey-manager
 yubioath-desktop
 zulumount-gui
@@ -109,3 +110,15 @@ grub-efi-amd64-signed
 grub-common
 grub2-common
 hardening-runtime
+
+#MediaTek
+bison
+flex
+libdw-dev
+libelf-dev
+libfl-dev
+libfl2
+liblzma-dev
+libncurses-dev
+libssl-dev
+
