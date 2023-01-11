@@ -8,6 +8,7 @@ sbsigntool
 strace
 gparted
 disktype
+ufw
 network-manager-openvpn
 network-manager-openvpn-gnome
 virt-manager
