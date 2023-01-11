@@ -6,7 +6,6 @@ ndctl
 flashrom
 sbsigntool
 strace
-gufw
 gparted
 disktype
 network-manager-openvpn
