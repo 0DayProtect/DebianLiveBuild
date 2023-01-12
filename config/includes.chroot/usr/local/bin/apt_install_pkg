@@ -22,6 +22,8 @@ htop \
 binwalk \
 testdisk \
 macchanger \
+iftop \
+etherape \
 fastboot \
 adb \
 usb-modeswitch-data \
