@@ -20,6 +20,8 @@ htop
 binwalk
 testdisk
 macchanger
+iftop
+arpwatch
 fastboot
 adb
 usb-modeswitch-data
