@@ -35,21 +35,22 @@ On Debian based systems, live-build can be installed with:
 live-build can be used to build this image with the following command executed
 in this directory::
 
+# sudo lb build
 
 BOOKWORM "BUGS" 
+
+LB BUILD
 live-build: lb build fails with "sed: can't read exclude: No such file or directory"
 
 # cd /usr/share/live/build/data/debian-cd
 # sudo ln -s squeeze bookworm
 # sudo ln -s squeeze testing
 
-# sudo lb build
-
 FIREWALL CHECK
-# sudo ufw enable
 # sudo ufw status
+# sudo ufw enable
 
-TOR
+TOR BROWSER
 # tor_fix
 
 More information about live-build and the Live Systems project can be found on
