@@ -48,6 +48,7 @@ broadcom-sta-common
 
 
 #SELinux
+auditd
 selinux-basics
 selinux-policy-default
 selinux-policy-dev
