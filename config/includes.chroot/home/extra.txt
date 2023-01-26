@@ -31,3 +31,7 @@ rm -r chipsec-master.zip
 wget -c https://github.com/coreboot/coreboot/archive/refs/heads/master.zip -O coreboot-master.zip
 unzip coreboot-master.zip
 rm -r coreboot-master.zip
+
+#Tor Browser
+wget -c https://www.torproject.org/dist/torbrowser/12.5a2/tor-browser-linux64-12.5a2_ALL.tar.xz
+tar -xvjpf tor-browser-linux64-12.5a2_ALL.tar.xz
