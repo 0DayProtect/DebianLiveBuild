@@ -86,6 +86,7 @@ tcptrace
 tcptrack
 ssldump
 vdpau-driver-all
+wireshark-qt
 
 #Encryption
 keepassxc
@@ -125,4 +126,11 @@ libfl2
 liblzma-dev
 libncurses-dev
 libssl-dev
+
+#Xfce
+xfce4-screenshooter
+youtubedl-gui
+youtube-dl
+gimp
+
 
