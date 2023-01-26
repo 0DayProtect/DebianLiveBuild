@@ -133,4 +133,5 @@ youtubedl-gui
 youtube-dl
 gimp
 
-
+#Fix CPU hack
+libupower-glib-dev
