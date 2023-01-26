@@ -4,7 +4,7 @@ echo "Enabling UFW"
 ufw enable
 
 echo "I: running $0"
-disabled_services="tor.service openvpn.service rsync.service ssh.service nmbd.service smbd.service libvirtd.service libvirt-guests.service cups-browsed.service bluetooth.service cups.service fancontrol.service laptop-mode.service ntp.service plymouth.service preload.service smartmontools.service lm-sensors.service hddtemp.service haveged.service packagekit.service libvirtd.service bluetooth.service"
+disabled_services="tor.service openvpn.service rsync.service ssh.service nmbd.service smbd.service libvirtd.service libvirt-guests.service cups-browsed.service bluetooth.service cups.service fancontrol.service laptop-mode.service ntp.service plymouth.service preload.service smartmontools.service lm-sensors.service hddtemp.service haveged.service packagekit.service libvirtd.service bluetooth.service upower.service upower.service"
 enabled_services="auditd.service"
 
 for service in $disabled_services; do
