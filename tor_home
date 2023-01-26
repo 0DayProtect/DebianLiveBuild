@@ -1,0 +1,3 @@
+#!/bin/bash
+
+exec /home/tor-browser/Browser/start-tor-browser --detach
