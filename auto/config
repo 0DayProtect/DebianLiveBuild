@@ -1,4 +1,4 @@
-#!/bin/sh
+##!/bin/sh
 
 set -e
 
@@ -19,7 +19,7 @@ lb config noauto \
         --mode debian \
 	--system live \
 	--interactive false \
-	--distribution bookworm \
+	--distribution trixie \
 	--debootstrap-options "--include=apt-transport-https,ca-certificates,openssl" \
         --mirror-bootstrap "https://deb.debian.org/debian/" \
         --mirror-chroot "https://deb.debian.org/debian/" \
@@ -47,7 +47,7 @@ lb config noauto \
 	--bootappend-live-failsafe "boot=live components selinux=1 security=selinux toram" \
         --debian-installer live \
         --linux-packages "linux-image linux-headers" \
-        --archive-areas "main contrib non-free" \
+        --archive-areas "main contrib non-free non-free-firmware" \
         --uefi-secure-boot enable \
 	--loadlin false \
 	--memtest none \

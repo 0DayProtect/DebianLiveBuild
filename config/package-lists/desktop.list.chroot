@@ -1,7 +1,7 @@
 live-task-xfce
 
 plymouth
-plymouth-x11
+#plymouth-x11
 
-gstreamer1.0-vaapi
+#gstreamer1.0-vaapi
 i965-va-driver

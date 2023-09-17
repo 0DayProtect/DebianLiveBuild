@@ -1,4 +1,4 @@
-#Tools
+###Tools
 git
 lshw
 libndctl-dev
@@ -12,7 +12,6 @@ ufw
 network-manager-openvpn
 network-manager-openvpn-gnome
 virt-manager
-torbrowser-launcher
 uefitool
 traceroute
 lsof
@@ -35,7 +34,6 @@ unhide.rb
 #Live
 live-build
 
-
 #Firmware
 firmware-linux-nonfree
 firmware-linux-free
@@ -43,9 +41,6 @@ firmware-linux
 firmware-iwlwifi
 firmware-brcm80211
 firmware-realtek
-broadcom-sta-dkms
-broadcom-sta-common
-
 
 #SELinux
 auditd
@@ -65,7 +60,6 @@ policycoreutils-sandbox
 acpica-tools
 acpi
 acpitail
-mlocate
 p7zip
 innoextract
 python3-pip
@@ -89,10 +83,6 @@ vdpau-driver-all
 wireshark-qt
 
 #Encryption
-keepassxc
-yubikey-personalization
-yubikey-manager
-yubioath-desktop
 zulumount-gui
 zulucrypt-gui
 dislocker
@@ -129,9 +119,19 @@ libssl-dev
 
 #Xfce
 xfce4-screenshooter
-youtubedl-gui
-youtube-dl
 gimp
+gufw
 
-#Fix CPU hack
-libupower-glib-dev
+#Kernel
+linux-image-6.4.0-4-amd64
+linux-headers-6.4.0-4-amd64
+
+#google-chrome
+libu2f-udev
+
+#mtkclient
+unrar-free
+python3
+git
+libusb-1.0-0
+python3-pip
